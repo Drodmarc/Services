@@ -126,3 +126,411 @@ Migrating to CreateProvinces (20220711075218)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4159635329590937700')[0m
   [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRegion Load (0.6ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '010000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.6ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '012800000' AND `provinces`.`name` = 'Ilocos Norte' AND `provinces`.`region_id` = 1 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('012800000', 'Ilocos Norte', 1, '2022-07-11 08:42:52.585493', '2022-07-11 08:42:52.585493')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '010000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '012900000' AND `provinces`.`name` = 'Ilocos Sur' AND `provinces`.`region_id` = 1 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('012900000', 'Ilocos Sur', 1, '2022-07-11 08:42:52.593433', '2022-07-11 08:42:52.593433')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '010000000' LIMIT 1[0m
+  [1m[36mProvince Load (3.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '013300000' AND `provinces`.`name` = 'La Union' AND `provinces`.`region_id` = 1 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('013300000', 'La Union', 1, '2022-07-11 08:42:52.604605', '2022-07-11 08:42:52.604605')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '010000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '015500000' AND `provinces`.`name` = 'Pangasinan' AND `provinces`.`region_id` = 1 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('015500000', 'Pangasinan', 1, '2022-07-11 08:42:52.612747', '2022-07-11 08:42:52.612747')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '020000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '020900000' AND `provinces`.`name` = 'Batanes' AND `provinces`.`region_id` = 2 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('020900000', 'Batanes', 2, '2022-07-11 08:42:52.620079', '2022-07-11 08:42:52.620079')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '020000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.6ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '021500000' AND `provinces`.`name` = 'Cagayan' AND `provinces`.`region_id` = 2 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('021500000', 'Cagayan', 2, '2022-07-11 08:42:52.640634', '2022-07-11 08:42:52.640634')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '020000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '023100000' AND `provinces`.`name` = 'Isabela' AND `provinces`.`region_id` = 2 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('023100000', 'Isabela', 2, '2022-07-11 08:42:52.647422', '2022-07-11 08:42:52.647422')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '020000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '025000000' AND `provinces`.`name` = 'Nueva Vizcaya' AND `provinces`.`region_id` = 2 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.4ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('025000000', 'Nueva Vizcaya', 2, '2022-07-11 08:42:52.653766', '2022-07-11 08:42:52.653766')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '020000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '025700000' AND `provinces`.`name` = 'Quirino' AND `provinces`.`region_id` = 2 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.4ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('025700000', 'Quirino', 2, '2022-07-11 08:42:52.659830', '2022-07-11 08:42:52.659830')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '030000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '030800000' AND `provinces`.`name` = 'Bataan' AND `provinces`.`region_id` = 3 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('030800000', 'Bataan', 3, '2022-07-11 08:42:52.666499', '2022-07-11 08:42:52.666499')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '030000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '031400000' AND `provinces`.`name` = 'Bulacan' AND `provinces`.`region_id` = 3 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('031400000', 'Bulacan', 3, '2022-07-11 08:42:52.672926', '2022-07-11 08:42:52.672926')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '030000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '034900000' AND `provinces`.`name` = 'Nueva Ecija' AND `provinces`.`region_id` = 3 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('034900000', 'Nueva Ecija', 3, '2022-07-11 08:42:52.679227', '2022-07-11 08:42:52.679227')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '030000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.6ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '035400000' AND `provinces`.`name` = 'Pampanga' AND `provinces`.`region_id` = 3 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('035400000', 'Pampanga', 3, '2022-07-11 08:42:52.686622', '2022-07-11 08:42:52.686622')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '030000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '036900000' AND `provinces`.`name` = 'Tarlac' AND `provinces`.`region_id` = 3 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('036900000', 'Tarlac', 3, '2022-07-11 08:42:52.693470', '2022-07-11 08:42:52.693470')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '030000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '037100000' AND `provinces`.`name` = 'Zambales' AND `provinces`.`region_id` = 3 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('037100000', 'Zambales', 3, '2022-07-11 08:42:52.699920', '2022-07-11 08:42:52.699920')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '030000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '037700000' AND `provinces`.`name` = 'Aurora' AND `provinces`.`region_id` = 3 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('037700000', 'Aurora', 3, '2022-07-11 08:42:52.707195', '2022-07-11 08:42:52.707195')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '040000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '041000000' AND `provinces`.`name` = 'Batangas' AND `provinces`.`region_id` = 4 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('041000000', 'Batangas', 4, '2022-07-11 08:42:52.713090', '2022-07-11 08:42:52.713090')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '040000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '042100000' AND `provinces`.`name` = 'Cavite' AND `provinces`.`region_id` = 4 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('042100000', 'Cavite', 4, '2022-07-11 08:42:52.719069', '2022-07-11 08:42:52.719069')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '040000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '043400000' AND `provinces`.`name` = 'Laguna' AND `provinces`.`region_id` = 4 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('043400000', 'Laguna', 4, '2022-07-11 08:42:52.724930', '2022-07-11 08:42:52.724930')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '040000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '045600000' AND `provinces`.`name` = 'Quezon' AND `provinces`.`region_id` = 4 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('045600000', 'Quezon', 4, '2022-07-11 08:42:52.732183', '2022-07-11 08:42:52.732183')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '040000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '045800000' AND `provinces`.`name` = 'Rizal' AND `provinces`.`region_id` = 4 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('045800000', 'Rizal', 4, '2022-07-11 08:42:52.738860', '2022-07-11 08:42:52.738860')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '170000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '174000000' AND `provinces`.`name` = 'Marinduque' AND `provinces`.`region_id` = 5 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('174000000', 'Marinduque', 5, '2022-07-11 08:42:52.744734', '2022-07-11 08:42:52.744734')[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '170000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '175100000' AND `provinces`.`name` = 'Occidental Mindoro' AND `provinces`.`region_id` = 5 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('175100000', 'Occidental Mindoro', 5, '2022-07-11 08:42:52.753444', '2022-07-11 08:42:52.753444')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '170000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '175200000' AND `provinces`.`name` = 'Oriental Mindoro' AND `provinces`.`region_id` = 5 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.4ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('175200000', 'Oriental Mindoro', 5, '2022-07-11 08:42:52.760373', '2022-07-11 08:42:52.760373')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '170000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.6ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '175300000' AND `provinces`.`name` = 'Palawan' AND `provinces`.`region_id` = 5 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('175300000', 'Palawan', 5, '2022-07-11 08:42:52.827264', '2022-07-11 08:42:52.827264')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '170000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '175900000' AND `provinces`.`name` = 'Romblon' AND `provinces`.`region_id` = 5 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('175900000', 'Romblon', 5, '2022-07-11 08:42:52.833781', '2022-07-11 08:42:52.833781')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '050000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.2ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '050500000' AND `provinces`.`name` = 'Albay' AND `provinces`.`region_id` = 6 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('050500000', 'Albay', 6, '2022-07-11 08:42:52.838620', '2022-07-11 08:42:52.838620')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '050000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '051600000' AND `provinces`.`name` = 'Camarines Norte' AND `provinces`.`region_id` = 6 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('051600000', 'Camarines Norte', 6, '2022-07-11 08:42:52.844360', '2022-07-11 08:42:52.844360')[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '050000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.2ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '051700000' AND `provinces`.`name` = 'Camarines Sur' AND `provinces`.`region_id` = 6 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('051700000', 'Camarines Sur', 6, '2022-07-11 08:42:52.849484', '2022-07-11 08:42:52.849484')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '050000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '052000000' AND `provinces`.`name` = 'Catanduanes' AND `provinces`.`region_id` = 6 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('052000000', 'Catanduanes', 6, '2022-07-11 08:42:52.856562', '2022-07-11 08:42:52.856562')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '050000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '054100000' AND `provinces`.`name` = 'Masbate' AND `provinces`.`region_id` = 6 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('054100000', 'Masbate', 6, '2022-07-11 08:42:52.861874', '2022-07-11 08:42:52.861874')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '050000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '056200000' AND `provinces`.`name` = 'Sorsogon' AND `provinces`.`region_id` = 6 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('056200000', 'Sorsogon', 6, '2022-07-11 08:42:52.867709', '2022-07-11 08:42:52.867709')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '060000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '060400000' AND `provinces`.`name` = 'Aklan' AND `provinces`.`region_id` = 7 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('060400000', 'Aklan', 7, '2022-07-11 08:42:52.874377', '2022-07-11 08:42:52.874377')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '060000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.2ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '060600000' AND `provinces`.`name` = 'Antique' AND `provinces`.`region_id` = 7 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('060600000', 'Antique', 7, '2022-07-11 08:42:52.879546', '2022-07-11 08:42:52.879546')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '060000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '061900000' AND `provinces`.`name` = 'Capiz' AND `provinces`.`region_id` = 7 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('061900000', 'Capiz', 7, '2022-07-11 08:42:52.885238', '2022-07-11 08:42:52.885238')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.2ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '060000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '063000000' AND `provinces`.`name` = 'Iloilo' AND `provinces`.`region_id` = 7 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.4ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('063000000', 'Iloilo', 7, '2022-07-11 08:42:52.890938', '2022-07-11 08:42:52.890938')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '060000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '064500000' AND `provinces`.`name` = 'Negros Occidental' AND `provinces`.`region_id` = 7 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('064500000', 'Negros Occidental', 7, '2022-07-11 08:42:52.897827', '2022-07-11 08:42:52.897827')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '060000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '067900000' AND `provinces`.`name` = 'Guimaras' AND `provinces`.`region_id` = 7 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('067900000', 'Guimaras', 7, '2022-07-11 08:42:52.904332', '2022-07-11 08:42:52.904332')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '070000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '071200000' AND `provinces`.`name` = 'Bohol' AND `provinces`.`region_id` = 8 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('071200000', 'Bohol', 8, '2022-07-11 08:42:52.910338', '2022-07-11 08:42:52.910338')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '070000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '072200000' AND `provinces`.`name` = 'Cebu' AND `provinces`.`region_id` = 8 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('072200000', 'Cebu', 8, '2022-07-11 08:42:52.917274', '2022-07-11 08:42:52.917274')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '070000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '074600000' AND `provinces`.`name` = 'Negros Oriental' AND `provinces`.`region_id` = 8 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('074600000', 'Negros Oriental', 8, '2022-07-11 08:42:52.923880', '2022-07-11 08:42:52.923880')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '070000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '076100000' AND `provinces`.`name` = 'Siquijor' AND `provinces`.`region_id` = 8 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('076100000', 'Siquijor', 8, '2022-07-11 08:42:52.930133', '2022-07-11 08:42:52.930133')[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '080000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '082600000' AND `provinces`.`name` = 'Eastern Samar' AND `provinces`.`region_id` = 9 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('082600000', 'Eastern Samar', 9, '2022-07-11 08:42:52.937565', '2022-07-11 08:42:52.937565')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '080000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '083700000' AND `provinces`.`name` = 'Leyte' AND `provinces`.`region_id` = 9 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('083700000', 'Leyte', 9, '2022-07-11 08:42:52.943122', '2022-07-11 08:42:52.943122')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '080000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '084800000' AND `provinces`.`name` = 'Northern Samar' AND `provinces`.`region_id` = 9 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('084800000', 'Northern Samar', 9, '2022-07-11 08:42:52.949601', '2022-07-11 08:42:52.949601')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.6ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '080000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.6ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '086000000' AND `provinces`.`name` = 'Samar' AND `provinces`.`region_id` = 9 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('086000000', 'Samar', 9, '2022-07-11 08:42:52.957502', '2022-07-11 08:42:52.957502')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '080000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '086400000' AND `provinces`.`name` = 'Southern Leyte' AND `provinces`.`region_id` = 9 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('086400000', 'Southern Leyte', 9, '2022-07-11 08:42:52.962836', '2022-07-11 08:42:52.962836')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '080000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '087800000' AND `provinces`.`name` = 'Biliran' AND `provinces`.`region_id` = 9 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('087800000', 'Biliran', 9, '2022-07-11 08:42:52.968480', '2022-07-11 08:42:52.968480')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '090000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '097200000' AND `provinces`.`name` = 'Zamboanga Del Norte' AND `provinces`.`region_id` = 10 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('097200000', 'Zamboanga Del Norte', 10, '2022-07-11 08:42:52.974350', '2022-07-11 08:42:52.974350')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '090000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '097300000' AND `provinces`.`name` = 'Zamboanga Del Sur' AND `provinces`.`region_id` = 10 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('097300000', 'Zamboanga Del Sur', 10, '2022-07-11 08:42:52.981096', '2022-07-11 08:42:52.981096')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '090000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '098300000' AND `provinces`.`name` = 'Zamboanga Sibugay' AND `provinces`.`region_id` = 10 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.4ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('098300000', 'Zamboanga Sibugay', 10, '2022-07-11 08:42:52.988153', '2022-07-11 08:42:52.988153')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '100000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '101300000' AND `provinces`.`name` = 'Bukidnon' AND `provinces`.`region_id` = 11 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('101300000', 'Bukidnon', 11, '2022-07-11 08:42:52.994433', '2022-07-11 08:42:52.994433')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '100000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '101800000' AND `provinces`.`name` = 'Camiguin' AND `provinces`.`region_id` = 11 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('101800000', 'Camiguin', 11, '2022-07-11 08:42:53.001312', '2022-07-11 08:42:53.001312')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '100000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '103500000' AND `provinces`.`name` = 'Lanao Del Norte' AND `provinces`.`region_id` = 11 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('103500000', 'Lanao Del Norte', 11, '2022-07-11 08:42:53.007340', '2022-07-11 08:42:53.007340')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '100000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '104200000' AND `provinces`.`name` = 'Misamis Occidental' AND `provinces`.`region_id` = 11 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('104200000', 'Misamis Occidental', 11, '2022-07-11 08:42:53.013259', '2022-07-11 08:42:53.013259')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '100000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.6ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '104300000' AND `provinces`.`name` = 'Misamis Oriental' AND `provinces`.`region_id` = 11 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('104300000', 'Misamis Oriental', 11, '2022-07-11 08:42:53.020307', '2022-07-11 08:42:53.020307')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '110000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '112300000' AND `provinces`.`name` = 'Davao Del Norte' AND `provinces`.`region_id` = 12 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('112300000', 'Davao Del Norte', 12, '2022-07-11 08:42:53.028934', '2022-07-11 08:42:53.028934')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '110000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '112400000' AND `provinces`.`name` = 'Davao Del Sur' AND `provinces`.`region_id` = 12 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('112400000', 'Davao Del Sur', 12, '2022-07-11 08:42:53.035257', '2022-07-11 08:42:53.035257')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '110000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '112500000' AND `provinces`.`name` = 'Davao Oriental' AND `provinces`.`region_id` = 12 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('112500000', 'Davao Oriental', 12, '2022-07-11 08:42:53.042213', '2022-07-11 08:42:53.042213')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '110000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '118200000' AND `provinces`.`name` = 'Davao De Oro' AND `provinces`.`region_id` = 12 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('118200000', 'Davao De Oro', 12, '2022-07-11 08:42:53.048274', '2022-07-11 08:42:53.048274')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '110000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '118600000' AND `provinces`.`name` = 'Davao Occidental' AND `provinces`.`region_id` = 12 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('118600000', 'Davao Occidental', 12, '2022-07-11 08:42:53.054427', '2022-07-11 08:42:53.054427')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '120000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '124700000' AND `provinces`.`name` = 'Cotabato' AND `provinces`.`region_id` = 13 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('124700000', 'Cotabato', 13, '2022-07-11 08:42:53.061859', '2022-07-11 08:42:53.061859')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '120000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '126300000' AND `provinces`.`name` = 'South Cotabato' AND `provinces`.`region_id` = 13 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('126300000', 'South Cotabato', 13, '2022-07-11 08:42:53.067378', '2022-07-11 08:42:53.067378')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '120000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '126500000' AND `provinces`.`name` = 'Sultan Kudarat' AND `provinces`.`region_id` = 13 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('126500000', 'Sultan Kudarat', 13, '2022-07-11 08:42:53.073662', '2022-07-11 08:42:53.073662')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '120000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.6ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '128000000' AND `provinces`.`name` = 'Sarangani' AND `provinces`.`region_id` = 13 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('128000000', 'Sarangani', 13, '2022-07-11 08:42:53.080109', '2022-07-11 08:42:53.080109')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '140000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '140100000' AND `provinces`.`name` = 'Abra' AND `provinces`.`region_id` = 15 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.5ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('140100000', 'Abra', 15, '2022-07-11 08:42:53.086384', '2022-07-11 08:42:53.086384')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '140000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '141100000' AND `provinces`.`name` = 'Benguet' AND `provinces`.`region_id` = 15 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('141100000', 'Benguet', 15, '2022-07-11 08:42:53.093807', '2022-07-11 08:42:53.093807')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '140000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '142700000' AND `provinces`.`name` = 'Ifugao' AND `provinces`.`region_id` = 15 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('142700000', 'Ifugao', 15, '2022-07-11 08:42:53.101231', '2022-07-11 08:42:53.101231')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '140000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '143200000' AND `provinces`.`name` = 'Kalinga' AND `provinces`.`region_id` = 15 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('143200000', 'Kalinga', 15, '2022-07-11 08:42:53.107590', '2022-07-11 08:42:53.107590')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '140000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '144400000' AND `provinces`.`name` = 'Mountain Province' AND `provinces`.`region_id` = 15 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('144400000', 'Mountain Province', 15, '2022-07-11 08:42:53.113576', '2022-07-11 08:42:53.113576')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '140000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.6ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '148100000' AND `provinces`.`name` = 'Apayao' AND `provinces`.`region_id` = 15 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('148100000', 'Apayao', 15, '2022-07-11 08:42:53.121448', '2022-07-11 08:42:53.121448')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '160000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '160200000' AND `provinces`.`name` = 'Agusan Del Norte' AND `provinces`.`region_id` = 16 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('160200000', 'Agusan Del Norte', 16, '2022-07-11 08:42:53.127219', '2022-07-11 08:42:53.127219')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '160000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '160300000' AND `provinces`.`name` = 'Agusan Del Sur' AND `provinces`.`region_id` = 16 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('160300000', 'Agusan Del Sur', 16, '2022-07-11 08:42:53.134549', '2022-07-11 08:42:53.134549')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '160000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '166700000' AND `provinces`.`name` = 'Surigao Del Norte' AND `provinces`.`region_id` = 16 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('166700000', 'Surigao Del Norte', 16, '2022-07-11 08:42:53.142157', '2022-07-11 08:42:53.142157')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '160000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '166800000' AND `provinces`.`name` = 'Surigao Del Sur' AND `provinces`.`region_id` = 16 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('166800000', 'Surigao Del Sur', 16, '2022-07-11 08:42:53.148931', '2022-07-11 08:42:53.148931')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '160000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '168500000' AND `provinces`.`name` = 'Dinagat Islands' AND `provinces`.`region_id` = 16 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('168500000', 'Dinagat Islands', 16, '2022-07-11 08:42:53.155090', '2022-07-11 08:42:53.155090')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '150000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '150700000' AND `provinces`.`name` = 'Basilan' AND `provinces`.`region_id` = 17 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.2ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('150700000', 'Basilan', 17, '2022-07-11 08:42:53.162337', '2022-07-11 08:42:53.162337')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '150000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '153600000' AND `provinces`.`name` = 'Lanao Del Sur' AND `provinces`.`region_id` = 17 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('153600000', 'Lanao Del Sur', 17, '2022-07-11 08:42:53.168713', '2022-07-11 08:42:53.168713')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '150000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '153800000' AND `provinces`.`name` = 'Maguindanao' AND `provinces`.`region_id` = 17 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('153800000', 'Maguindanao', 17, '2022-07-11 08:42:53.175804', '2022-07-11 08:42:53.175804')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '150000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.3ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '156600000' AND `provinces`.`name` = 'Sulu' AND `provinces`.`region_id` = 17 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.4ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('156600000', 'Sulu', 17, '2022-07-11 08:42:53.182449', '2022-07-11 08:42:53.182449')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '150000000' LIMIT 1[0m
+  [1m[36mProvince Load (0.4ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`code` = '157000000' AND `provinces`.`name` = 'Tawi-Tawi' AND `provinces`.`region_id` = 17 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProvince Create (0.3ms)[0m  [1m[32mINSERT INTO `provinces` (`code`, `name`, `region_id`, `created_at`, `updated_at`) VALUES ('157000000', 'Tawi-Tawi', 17, '2022-07-11 08:42:53.190084', '2022-07-11 08:42:53.190084')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` ORDER BY `regions`.`id` ASC LIMIT 1[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` ORDER BY `regions`.`id` ASC LIMIT 1[0m
+  [1m[36mProvince Load (0.5ms)[0m  [1m[34mSELECT `provinces`.* FROM `provinces` WHERE `provinces`.`region_id` = 1 /* loading for inspect */ LIMIT 11[0m
