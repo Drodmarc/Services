@@ -556,3 +556,19 @@ Migrating to CreateDistricts (20220711091449)
   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4159635329590937700')[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' LIMIT 1[0m
+  [1m[36mDistrict Load (0.3ms)[0m  [1m[34mSELECT `districts`.* FROM `districts` WHERE `districts`.`code` = '133900000' AND `districts`.`name` = 'First District' AND `districts`.`region_id` IS NULL LIMIT 1[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' LIMIT 1[0m
+  [1m[36mDistrict Load (0.4ms)[0m  [1m[34mSELECT `districts`.* FROM `districts` WHERE `districts`.`code` = '137400000' AND `districts`.`name` = 'Second District' AND `districts`.`region_id` IS NULL LIMIT 1[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' LIMIT 1[0m
+  [1m[36mDistrict Load (0.4ms)[0m  [1m[34mSELECT `districts`.* FROM `districts` WHERE `districts`.`code` = '137500000' AND `districts`.`name` = 'Third District' AND `districts`.`region_id` IS NULL LIMIT 1[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' LIMIT 1[0m
+  [1m[36mDistrict Load (0.3ms)[0m  [1m[34mSELECT `districts`.* FROM `districts` WHERE `districts`.`code` = '137600000' AND `districts`.`name` = 'Fourth District' AND `districts`.`region_id` IS NULL LIMIT 1[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' LIMIT 1[0m
+  [1m[36mDistrict Load (0.3ms)[0m  [1m[34mSELECT `districts`.* FROM `districts` WHERE `districts`.`code` = '133900000' AND `districts`.`name` = 'First District' AND `districts`.`region_id` IS NULL LIMIT 1[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' LIMIT 1[0m
+  [1m[36mDistrict Load (0.3ms)[0m  [1m[34mSELECT `districts`.* FROM `districts` WHERE `districts`.`code` = '137400000' AND `districts`.`name` = 'Second District' AND `districts`.`region_id` IS NULL LIMIT 1[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' LIMIT 1[0m
+  [1m[36mDistrict Load (0.4ms)[0m  [1m[34mSELECT `districts`.* FROM `districts` WHERE `districts`.`code` = '137500000' AND `districts`.`name` = 'Third District' AND `districts`.`region_id` IS NULL LIMIT 1[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' LIMIT 1[0m
+  [1m[36mDistrict Load (0.4ms)[0m  [1m[34mSELECT `districts`.* FROM `districts` WHERE `districts`.`code` = '137600000' AND `districts`.`name` = 'Fourth District' AND `districts`.`region_id` IS NULL LIMIT 1[0m
