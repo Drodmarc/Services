@@ -37,3 +37,82 @@ Migrating to CreateRegions (20220711052630)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('4159635329590937700')[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 172.23.0.1 at 2022-07-11 06:17:31 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (14.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-6.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-6.1.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.7ms | Allocations: 508)
+Completed 200 OK in 79ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 4343)
+
+
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `services_phil` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE `services_phil_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[36mRegion Load (0.8ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '010000000' AND `regions`.`name` = 'Ilocos Region' AND `regions`.`region_name` = 'Region I' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.6ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('010000000', 'Ilocos Region', 'Region I', '2022-07-11 07:26:57.772839', '2022-07-11 07:26:57.772839')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '020000000' AND `regions`.`name` = 'Cagayan Valley' AND `regions`.`region_name` = 'Region II' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('020000000', 'Cagayan Valley', 'Region II', '2022-07-11 07:26:57.778729', '2022-07-11 07:26:57.778729')[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '030000000' AND `regions`.`name` = 'Central Luzon' AND `regions`.`region_name` = 'Region III' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('030000000', 'Central Luzon', 'Region III', '2022-07-11 07:26:57.784168', '2022-07-11 07:26:57.784168')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '040000000' AND `regions`.`name` = 'CALABARZON' AND `regions`.`region_name` = 'Region IV-A' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.4ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('040000000', 'CALABARZON', 'Region IV-A', '2022-07-11 07:26:57.789392', '2022-07-11 07:26:57.789392')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '170000000' AND `regions`.`name` = 'MIMAROPA Region' AND `regions`.`region_name` = 'MIMAROPA Region' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('170000000', 'MIMAROPA Region', 'MIMAROPA Region', '2022-07-11 07:26:57.794815', '2022-07-11 07:26:57.794815')[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '050000000' AND `regions`.`name` = 'Bicol Region' AND `regions`.`region_name` = 'Region V' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.2ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('050000000', 'Bicol Region', 'Region V', '2022-07-11 07:26:57.801024', '2022-07-11 07:26:57.801024')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '060000000' AND `regions`.`name` = 'Western Visayas' AND `regions`.`region_name` = 'Region VI' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.4ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('060000000', 'Western Visayas', 'Region VI', '2022-07-11 07:26:57.806470', '2022-07-11 07:26:57.806470')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.7ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '070000000' AND `regions`.`name` = 'Central Visayas' AND `regions`.`region_name` = 'Region VII' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('070000000', 'Central Visayas', 'Region VII', '2022-07-11 07:26:57.812625', '2022-07-11 07:26:57.812625')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '080000000' AND `regions`.`name` = 'Eastern Visayas' AND `regions`.`region_name` = 'Region VIII' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.2ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('080000000', 'Eastern Visayas', 'Region VIII', '2022-07-11 07:26:57.817732', '2022-07-11 07:26:57.817732')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '090000000' AND `regions`.`name` = 'Zamboanga Peninsula' AND `regions`.`region_name` = 'Region IX' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.5ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('090000000', 'Zamboanga Peninsula', 'Region IX', '2022-07-11 07:26:57.822263', '2022-07-11 07:26:57.822263')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.5ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '100000000' AND `regions`.`name` = 'Northern Mindanao' AND `regions`.`region_name` = 'Region X' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('100000000', 'Northern Mindanao', 'Region X', '2022-07-11 07:26:57.828455', '2022-07-11 07:26:57.828455')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '110000000' AND `regions`.`name` = 'Davao Region' AND `regions`.`region_name` = 'Region XI' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.5ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('110000000', 'Davao Region', 'Region XI', '2022-07-11 07:26:57.833385', '2022-07-11 07:26:57.833385')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '120000000' AND `regions`.`name` = 'SOCCSKSARGEN' AND `regions`.`region_name` = 'Region XII' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('120000000', 'SOCCSKSARGEN', 'Region XII', '2022-07-11 07:26:57.839085', '2022-07-11 07:26:57.839085')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '130000000' AND `regions`.`name` = 'NCR' AND `regions`.`region_name` = 'National Capital Region' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('130000000', 'NCR', 'National Capital Region', '2022-07-11 07:26:57.844688', '2022-07-11 07:26:57.844688')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '140000000' AND `regions`.`name` = 'CAR' AND `regions`.`region_name` = 'Cordillera Administrative Region' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('140000000', 'CAR', 'Cordillera Administrative Region', '2022-07-11 07:26:57.849572', '2022-07-11 07:26:57.849572')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.3ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '160000000' AND `regions`.`name` = 'Caraga' AND `regions`.`region_name` = 'Region XIII' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.4ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('160000000', 'Caraga', 'Region XIII', '2022-07-11 07:26:57.854285', '2022-07-11 07:26:57.854285')[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRegion Load (0.4ms)[0m  [1m[34mSELECT `regions`.* FROM `regions` WHERE `regions`.`code` = '150000000' AND `regions`.`name` = 'BARMM' AND `regions`.`region_name` = 'Bangsamoro Autonomous Region in Muslim Mindanao' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('150000000', 'BARMM', 'Bangsamoro Autonomous Region in Muslim Mindanao', '2022-07-11 07:26:57.860475', '2022-07-11 07:26:57.860475')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
