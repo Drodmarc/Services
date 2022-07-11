@@ -8,9 +8,13 @@ class PhLocationService
   def get_regions
     response = RestClient.get("#{url}/regions")
     regions = JSON.parse(response.body)
-    byebug
     regions.each do |region|
       Region.find_or_create_by(code: region['code'], name: region['name'], region_name: region['regionName'])
     end
+  end
+
+  def get_provinces
+    Region.all.each.do | Region region|
+    response = RestClient.get("#{url}/regions")
   end
 end

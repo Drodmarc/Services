@@ -116,3 +116,13 @@ Completed 200 OK in 79ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 434
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[36mRegion Create (0.3ms)[0m  [1m[32mINSERT INTO `regions` (`code`, `name`, `region_name`, `created_at`, `updated_at`) VALUES ('150000000', 'BARMM', 'Bangsamoro Autonomous Region in Muslim Mindanao', '2022-07-11 07:26:57.860475', '2022-07-11 07:26:57.860475')[0m
   [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4159635329590937700', 0)[0m
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateProvinces (20220711075218)
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE `provinces` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `code` varchar(255), `name` varchar(255), `region_id` bigint, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_provinces_on_region_id` (`region_id`))[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220711075218')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4159635329590937700')[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
