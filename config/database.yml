@@ -1,0 +1,14 @@
+development:
+  database: services_phil
+  username: root
+  password: qwer4321
+  adapter: mysql2
+  encoding: utf8mb4
+  host: db
+test:
+  database: services_phil_test
+  username: root
+  password: qwer4321
+  adapter: mysql2
+  encoding: utf8mb4
+  host: db
