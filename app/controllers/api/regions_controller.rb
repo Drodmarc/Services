@@ -6,7 +6,6 @@ class Api::RegionsController < ApplicationController
       format.json { render json: @regions, each_serializer: RegionSerializer }
       #whitout api
       # format.json {render json: @regions.to_json(except: [:id, :created_at,:updated_at])}
-
     end
   end
 end
